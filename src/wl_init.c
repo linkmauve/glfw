@@ -774,7 +774,7 @@ int _glfwPlatformInit(void)
 
     _glfwInitTimerPOSIX();
 
-    _glfw.wl.touchpoints = calloc(4, sizeof(_GLFWtouchpointWayland*));
+    _glfw.wl.touchpoints = calloc(4, sizeof(_GLFWtouchpointWayland));
     _glfw.wl.touchpointsSize = 4;
 
     for (i = 0; i < _glfw.wl.touchpointsSize; ++i)
